@@ -38,6 +38,17 @@ An intelligent Power BI copilot that converts natural language questions into DA
 - **Azure Service Principal** with Power BI permissions
 - **ADOMD.NET** client libraries
 
+## 📊 Sample Data
+
+This repository includes **`adventureworksdw2017august2022.pbix`** - a complete Adventure Works sample dataset that you can use to test the DAX Copilot immediately:
+
+- **Pre-configured tables**: FactInternetSales, DimSalesTerritory, DimDate
+- **Sample measures**: Revenue, Sales, Transaction Count
+- **Ready for RLS**: Includes country-based filtering setup
+- **Test queries**: Perfect for validating the copilot functionality
+
+**Quick Start**: Upload this .pbix file to your Power BI workspace to begin testing!
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone and Install Dependencies
@@ -66,13 +77,20 @@ az ad sp create-for-rbac --name "dax-copilot-sp" --role contributor
 # - tenant (TENANT_ID)
 ```
 
-### 4. Configure Power BI Permissions
+### 4. Upload Sample Dataset (Optional but Recommended)
+
+1. **Open Power BI Desktop**
+2. **Open the included file**: `adventureworksdw2017august2022.pbix`
+3. **Publish to your Power BI workspace**
+4. **Note the dataset name** for your configuration
+
+### 5. Configure Power BI Permissions
 
 1. Add service principal to Power BI workspace as **Member**
 2. Enable service principal in Power BI admin settings
 3. Grant semantic model **Read** permissions
 
-### 5. Update Configuration
+### 6. Update Configuration
 
 Edit the notebook configuration section:
 
@@ -90,7 +108,7 @@ TENANT_ID = "your-azure-tenant-id"
 
 # Power BI Configuration
 POWERBI_WORKSPACE = "your-workspace-name"
-SEMANTIC_MODEL = "your-semantic-model-name"
+SEMANTIC_MODEL = "adventureworksdw2017august2022"  # Use the sample dataset
 ```
 
 ## 🎯 Usage Examples
@@ -122,10 +140,13 @@ result = await production_dax_copilot_agent(
 
 ### Sample Business Questions
 
-- "What is the total revenue for 2023?"
-- "Show me sales by product category"
-- "Which regions had the highest growth?"
-- "What is the average order value by month?"
+**Adventure Works Dataset Queries:**
+- "What is the total revenue for 2013?"
+- "Show me sales by country"
+- "Which product categories had the highest sales?"
+- "What is the average order value by year?"
+- "Compare sales between United States and Canada"
+- "Show me the top 10 customers by revenue"
 
 ## 🔧 Semantic Model Requirements
 
