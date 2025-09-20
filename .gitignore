@@ -1,0 +1,98 @@
+# DAX Copilot .gitignore
+# Ignore sensitive configuration and credential files
+
+# Configuration files with secrets
+config.py
+credentials.json
+*.env
+.env*
+
+# API keys and tokens
+*.key
+*.secret
+token.pickle
+*.pem
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Data files (if containing sensitive information)
+*.csv
+*.xlsx
+*.json
+data/
+
+# Notebook outputs (if containing sensitive data)
+*.ipynb_output
+
+# Cache directories
+.cache/
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# Azure/Power BI specific
+*.pbix
+*.pbit
+powerbi_cache/
