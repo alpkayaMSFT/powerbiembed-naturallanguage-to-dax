@@ -1,8 +1,9 @@
 # 🤖 DAX Copilot - Natural Language to DAX with Semantic Kernel
 
 An intelligent Power BI copilot that converts natural language questions into DAX queries using **Semantic Kernel's agentic architecture**. Features advanced Row-Level Security (RLS) support and service principal authentication for enterprise deployments.
+<img width="1102" height="616" alt="3 Steps - Enhance Your Power BI Embed Solution - Custom Copilot Architecture" src="https://github.com/user-attachments/assets/91af9b91-a086-4fbc-87f4-1ea0a1f1cd5a" />
 
-![DAX Copilot Architecture](./3%20Steps%20-%20Enhance%20Your%20Power%20BI%20Embed%20Solution%20-%20Custom%20Copilot%20Architecture.png)
+
 
 ## 🚀 Features
 
